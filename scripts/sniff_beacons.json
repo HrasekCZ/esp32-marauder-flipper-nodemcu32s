@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "description": "Sniff WiFi beacon frames from nearby APs",
+    "repeat": 1,
+    "enableLed": true,
+    "savePcap": true
+  },
+  "stages": [
+    {
+      "sniff": {
+        "timeout": 30
+      }
+    }
+  ]
+}

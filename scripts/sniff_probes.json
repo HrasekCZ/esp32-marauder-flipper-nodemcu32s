@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "description": "Sniff probe requests - see what networks devices are looking for",
+    "repeat": 1,
+    "enableLed": true,
+    "savePcap": true
+  },
+  "stages": [
+    {
+      "exec": {
+        "cmd": "sniffprobe"
+      }
+    },
+    {
+      "delay": {
+        "seconds": 30
+      }
+    },
+    {
+      "exec": {
+        "cmd": "stopscan"
+      }
+    }
+  ]
+}

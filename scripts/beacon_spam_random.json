@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "description": "Spam fake WiFi network names",
+    "repeat": 1,
+    "enableLed": true,
+    "savePcap": false
+  },
+  "stages": [
+    {
+      "beaconList": {
+        "ssids": [
+          "FBI Surveillance Van",
+          "Not A FBI Van",
+          "Pretty Fly for a WiFi",
+          "Bill Wi the Science Fi",
+          "The LAN Before Time",
+          "Abraham Linksys",
+          "Silence of the LANs",
+          "Definitely Not Skynet",
+          "Tell My WiFi Love Her",
+          "Get Off My LAN"
+        ]
+      }
+    }
+  ]
+}

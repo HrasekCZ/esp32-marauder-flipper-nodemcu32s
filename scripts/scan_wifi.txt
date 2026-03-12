@@ -1,0 +1,21 @@
+; ================================
+; WiFi Access Point Scanner
+; Scans for nearby networks,
+; lists results and saves to log
+; ================================
+
+; Start scanning for access points
+scanap
+
+; Wait 10 seconds to collect data
+delay 10000
+
+; Stop scanning
+stopscan
+
+; List all found access points
+list -a
+
+; Save results to SD card log
+; (remove semicolon if you have SD card)
+; logs

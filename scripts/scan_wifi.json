@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "description": "Scan nearby WiFi networks",
+    "repeat": 1,
+    "enableLed": true,
+    "savePcap": false
+  },
+  "stages": [
+    {
+      "scan": {
+        "type": "ap",
+        "timeout": 10
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "description": "Scan nearby Bluetooth LE devices",
+    "repeat": 1,
+    "enableLed": true,
+    "savePcap": false
+  },
+  "stages": [
+    {
+      "scan": {
+        "type": "station",
+        "timeout": 15
+      }
+    }
+  ]
+}

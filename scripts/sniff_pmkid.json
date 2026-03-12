@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "description": "Sniff PMKID handshakes for WPA cracking",
+    "repeat": 1,
+    "enableLed": true,
+    "savePcap": true
+  },
+  "stages": [
+    {
+      "scan": {
+        "type": "ap",
+        "timeout": 10
+      }
+    },
+    {
+      "sniff": {
+        "timeout": 60,
+        "force": true
+      }
+    }
+  ]
+}

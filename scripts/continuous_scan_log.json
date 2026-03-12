@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "description": "Continuously scan and log all WiFi networks every 30 seconds",
+    "repeat": 10,
+    "enableLed": true,
+    "savePcap": false
+  },
+  "stages": [
+    {
+      "scan": {
+        "type": "ap",
+        "timeout": 15
+      }
+    },
+    {
+      "delay": {
+        "seconds": 5
+      }
+    }
+  ]
+}
